@@ -4,7 +4,7 @@ function(needed.packs){
 
   for(pack in needed.packs){
     if(length(grep(pack,installed.packs))==0){
-      install.packages(pack)
+      install.packages(pack,repos='http://cran.cnr.Berkeley.edu')
     }
     library(pack,character.only=T)
   }
