@@ -1,0 +1,3 @@
+h <- function(...){
+  head(...)
+}
