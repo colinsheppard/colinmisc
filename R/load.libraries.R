@@ -1,11 +1,14 @@
-load.libraries <-
-function(needed.packs,quietly=F){
+load.libraries <- function(needed.packs,quietly=T){
   installed.packs <- installed.packages()
 
   for(pack in needed.packs){
-    if(length(grep(pack,installed.packs))==0){
+    if(!pack %in% installed.packs){
       install.packages(pack,repos='http://cran.cnr.Berkeley.edu')
     }
-    library(pack,character.only=T,quietly=quietly)
+    if(quietly){
+      suppressPackageStartupMessages(library(pack,character.only=T,quietly=quietly))
+    }else{
+      library(pack,character.only=T)
+    }
   }
 }
