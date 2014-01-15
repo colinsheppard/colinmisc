@@ -2,11 +2,11 @@
 \alias{h}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Alias for head
+Alias for head. 
 %%  ~~function to do ... ~~
 }
 \description{
-Alias to the head command.
+Alias to the head command that prints some meta-data in addition to the truncated contents of the data frame or data table.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
