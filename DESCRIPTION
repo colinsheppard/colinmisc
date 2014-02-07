@@ -7,4 +7,4 @@ Author: Colin Sheppard
 Maintainer: <colin@humboldt.edu>
 Description: This package has miscellaneous functions I use regularly.
 License: GPL (Version 3 or later)
-Depends: snow,plotrix
+Depends: snow,plotrix,data.table
