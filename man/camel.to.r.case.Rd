@@ -8,7 +8,7 @@ Converts a string or vector of strings from CamelCase to r.case.
 Converts a string or vector of strings from CamelCase to r.case. (e.g. from 'ThisNameOfAVariable' to 'this.name.of.a.variable') 
 }
 \usage{
-camel.to.r.case (string.array)
+camel.to.r.case (camel.str)
 }
 \arguments{
   \item{camel.str}{Array of strings.} 

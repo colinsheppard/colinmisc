@@ -9,8 +9,7 @@ Function that encapsulates common pre- and post- join operations with data table
 Function that encapsulates common pre- and post- join operations with data tables. Data table 2 is joined to data table 1 on keys that do not need to have the exact same names. The user can optionally specify which columns from data table 2 are joined to data table 1 and those columns can be optionally prefixed in the result.
 }
 \usage{
-# example usage
-do.or.load (data.table.A,data.table.B,c('first.key.A','second.key.A'),c('first.key.B','second.key.B'),c('cols','from','B','to','include'),'prefix.on.B.columns.in.result')
+join.on(dt1,dt2,keys1,keys2=NULL,include.from.dt2=NULL,included.prefix='')
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
