@@ -13,7 +13,6 @@ camel.to.r.case (camel.str)
 \arguments{
   \item{camel.str}{Array of strings.} 
 }
-}
 \details{
 %%  ~~ If necessary, more details than the description above ~~
 }

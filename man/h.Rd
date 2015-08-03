@@ -18,7 +18,6 @@ h (...)
 %%     ~~Describe \code{dir} here~~
 }
 }
-}
 \details{
 %%  ~~ If necessary, more details than the description above ~~
 }

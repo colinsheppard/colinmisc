@@ -20,7 +20,6 @@ join.on(dt1,dt2,keys1,keys2=NULL,include.from.dt2=NULL,included.prefix='')
   \item{include.from.dt2}{The columns from dt2 to add to dt1. Leave as NULL to include all columns.}
   \item{included.prefix}{Optional prefix to append to the columns from dt2 that are added to dt1.}
 }
-}
 \details{
 %%  ~~ If necessary, more details than the description above ~~
 }

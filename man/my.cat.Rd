@@ -58,6 +58,7 @@ my.cat (message, ...)
 my.cat <- function(message,...){
   cat(paste(message,"\n",sep=''),...)
 }
+}
 
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
