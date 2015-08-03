@@ -1,4 +1,4 @@
-join.on <- function(dt1,dt2,keys1,keys2=NULL,include.from.dt2=NULL,included.prefix=''){
+join.on <- function(dt1,dt2,keys1,keys2=NULL,include.from.dt2=NULL,included.prefix='',allow.cartesian=F){
   if(is.null(keys2))keys2<-keys1
   if(!all(keys1==keys2)){
     for(i in 1:length(keys1)){
@@ -19,6 +19,6 @@ join.on <- function(dt1,dt2,keys1,keys2=NULL,include.from.dt2=NULL,included.pref
     cols.to.include <- pp(included.prefix,cols.to.include)
   }
   cols.to.include <- c(cols.to.include,keys1)
-  res.dt <- streval(pp('dt2[,list(',pp(cols.to.include,collapse=','),')][dt1]'))
+  res.dt <- streval(pp('dt2[,list(',pp(cols.to.include,collapse=','),')][dt1,allow.cartesian=',allow.cartesian,']'))
   return(res.dt)
 }
