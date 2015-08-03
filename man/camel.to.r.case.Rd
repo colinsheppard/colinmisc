@@ -40,3 +40,4 @@ camel.to.r.case (camel.str)
 }
 \examples{
 camel.to.r.case(c('ExampleVariable','AnotherExampleWithMoreWords'))
+}

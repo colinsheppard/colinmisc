@@ -46,4 +46,4 @@ A <- data.table(a=1:10,b=LETTERS[1:10],key='a')
 B <- data.table(c=1:20,d=letters[1:20],e=101:120,f=131:150,key='c')
 
 join.on(A,B,key1='a',keys2='c',include.from.dt2=c('d','f'),included.prefix='from.b.') # note that we join
-
+}
