@@ -1,4 +1,6 @@
 join.on <- function(dt1,dt2,keys1,keys2=NULL,include.from.dt2=NULL,included.prefix='',allow.cartesian=F){
+  dt1 <- copy(dt1)
+  dt2 <- copy(dt2)
   if(is.null(keys2))keys2<-keys1
   if(!all(keys1==keys2)){
     for(i in 1:length(keys1)){
