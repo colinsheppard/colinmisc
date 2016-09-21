@@ -1,6 +1,6 @@
 do.or.load <- function(file.path,fun,args.to.save=NA,...){
   if(!is.na(args.to.save)){
-    suppressWarnings(streval(pp('rm("',pp(args.to.save,collapse='","'),'",inherits=T)')))
+    suppressWarnings(streval(pp('rm("',pp(args.to.save,collapse='","'),'",envir=parent.frame())')))
   }
   if(!file.exists(file.path)){
     # do function call here so that vars are added to the frame of this function call....
