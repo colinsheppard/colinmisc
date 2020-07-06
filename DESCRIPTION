@@ -4,7 +4,7 @@ Title: Colin's Miscellaneous Functions
 Version: 0.1
 Date: 2012-04-13
 Author: Colin Sheppard
-Maintainer: <colin@humboldt.edu>
+Maintainer: <colin@marain.com>
 Description: This package has miscellaneous functions I use regularly.
 License: GPL (Version 3 or later)
-Depends: snow,plotrix,data.table
+Depends: data.table
